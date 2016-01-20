@@ -1,0 +1,107 @@
+// Static vars
+$image-height: 100px;
+
+.hide {
+    display: none;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.title {
+    text-align: center;
+}
+
+.image-carousel {
+    min-height: 150px;
+}
+
+.apt-carousel-text {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.slick-slide {
+   height: $image-height;
+
+   img {
+        height: $image-height;
+   }
+}
+
+.zumper-carousel {
+    position: relative;
+    overflow: hidden;
+    height: 442px;
+    width: 483px;
+
+    .top-pic {
+        height: 320px;
+        width: 480px;
+        border: 1px solid;
+        position: relative;
+
+        .image {
+            position: relative;
+            height: 320px;
+            width: 480px;
+        }
+
+        img {
+            max-height: 320px;
+            max-width: 480px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .left {
+            position: absolute;
+            left: -480px;
+            top: 0px;
+        }
+
+        .right {
+            position: absolute;
+            left: 480px;
+            top: 0px;
+        }
+    }
+
+    .filmstrip-wrapper {
+        width: 480px;
+        height: 100px;
+        border: 1px solid;
+        overflow: scroll;
+        white-space: nowrap;
+
+        .filmstrip {
+            // width: 4480px;
+            // height: 100px;
+            // border: 1px solid;
+            // padding-left: 5px;
+            // overflow-x: scroll;
+
+            .thumb {
+                display: inline-block;
+                margin: 8px 8px 0;
+
+                img {
+                    max-height: 100px;
+                    max-width: 100px;
+                }
+
+                &.border {
+                    border: 2px solid blue;
+                }
+
+            }
+        }
+    }
+}

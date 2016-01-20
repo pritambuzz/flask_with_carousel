@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1 class="title">Image Carousel</h1>
+<div class="wrapper">
+  <div class="apt-carousel-text hide">You are looking at pics for apartment number <span id="apt-num"></span>.
+  </div>
+  <div id="image-carousel" class="image-carousel">
+  </div>
+
+  <div class="get-pics hide">
+    <p>Enter a number between 1 and 1000 to check out pics for that apartment. We'll load those from the DB server side.
+      <input type="text" size="5" name="apt-num">
+    </p>
+    <p><a href=# id="retrieve-pics">Get apartment pics</a></p>
+  </div>
+
+  <div class="zumper-carousel">
+    <i class="fa fa-arrow-circle-left"></i>
+    <i class="fa fa-arrow-circle-right"></i>
+    <div class="top-pic">
+    </div>
+    <div class="filmstrip-wrapper">
+      <div id="filmstrip" class="filmstrip"></div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
