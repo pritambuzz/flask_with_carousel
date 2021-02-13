@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template, request
 # from flask.ext.scss import Scss
-from flask.ext.assets import Environment, Bundle
+from flask_assets import Environment, Bundle
 
 from images import get_images
 import logging

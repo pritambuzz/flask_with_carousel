@@ -1,5 +1,5 @@
 import sqlite3
-# conn = sqlite3.connect('/users/nathan/git/zumper/zumper.db')
+# conn = sqlite3.connect('/users/pritam/git/zumper/zumper.db')
 conn = sqlite3.connect('zumper.db')
 
 # c = conn.cursor()
@@ -13,7 +13,7 @@ for x in xrange(1, 10000):
 
     # Insert a row of data
     insert_sql = "INSERT INTO images (url, length, width) VALUES (\'" + url + "\',200, 200)"
-    print insert_sql
+    print(insert_sql)
     conn.execute(insert_sql)
 
     # print url
