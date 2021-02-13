@@ -1,4 +1,4 @@
-git clone https://github.com/NathanSF/flask_with_carousel.git
+git clone https://github.com/pritambuzz/flask_with_carousel.git
 
 cd flask_with_carousel
 
